@@ -1,0 +1,23 @@
+@import "./utils/mixins";
+@import "./utils/vars.scss";
+@import "./utils/hidden";
+
+@import "./components/reset";
+@import "./components/container";
+@import "./components/btn";
+
+@import "./components/header";
+@import "./components/mob-menu";
+@import "./components/hero";
+@import "./components/description";
+@import "./components/about";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/line";
+@import "./components/work";
+
+@import "./components/scrollbar";
+@import "./components/footer";
+
+@import "./components/backdrop";
+@import "./components/modal";

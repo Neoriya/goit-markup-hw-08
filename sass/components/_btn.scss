@@ -1,0 +1,143 @@
+.main-btn {
+  min-width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  @include font(700, 16px, 1.87, 0.06em);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  outline: transparent;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(0.9);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-button-icon {
+  margin-left: 10px;
+}
+
+// секция кнопок и работ
+
+.buttons-work {
+  padding-top: 60px;
+  @include desktop {
+    padding-top: var(--typical-margin);
+    padding-bottom: var(--typical-margin);
+  }
+}
+
+// часть 1 ряд кнопок
+
+.buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablet {
+    justify-content: center;
+  }
+  // @include desktop {
+  //   margin-bottom: 50px;
+  // }
+}
+
+.buttons-item {
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
+}
+
+.buttons-properties {
+  min-width: 73px;
+  height: 38px;
+  font-family: "Roboto";
+  @include font(500, 16px, 1.62, 0.06em);
+  align-items: center;
+  text-align: center;
+  background-color: var(--buttons-background-color);
+  padding: 6px 22px 6px 22px;
+  outline: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.buttons-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  fill: var(--main-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  padding: 0;
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}

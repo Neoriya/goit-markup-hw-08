@@ -1,0 +1,66 @@
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 25px;
+  @include tablet {
+    margin-top: 40px;
+  }
+  @include desktop {
+    margin-top: 50px;
+  }
+}
+
+.work-item {
+  width: 100%;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.work-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-images-text {
+  position: absolute;
+  top: 0;
+  @include font(null, 18px, 1.56, 0.03em);
+  color: var(--title-text-color);
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+  .work-item:hover & {
+    transform: translateY(0);
+  }
+}
+
+.work-item-caption {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
+}
+
+.work-name {
+  @include font(null, 18px, 2, 0.06em);
+}
+
+.work-specifics {
+  @include font(null, 16px, 1.88, 0.03em);
+  color: var(--secondary-text-color);
+  margin-top: 4px;
+}

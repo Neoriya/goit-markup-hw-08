@@ -1,0 +1,31 @@
+// Скролбар в галлерее
+
+.work-images-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.work-images-text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.work-images-text::-webkit-scrollbar-thumb {
+  background-color: #1678c8;
+  outline: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+// Скролбар в модалке
+
+.modal-user-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-user-text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal-user-text::-webkit-scrollbar-thumb {
+  background-color: #1678c8;
+  outline: 1px solid #2196f3;
+  border-radius: 4px;
+}
